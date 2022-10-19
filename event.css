@@ -1,0 +1,229 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#phoneScreen
+{    
+    width: 100vw;
+    height:100vh;
+    background-color: aqua;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#app
+{
+    display: grid;
+    grid-template-areas: 
+        'navbar navbar'
+        'agenda agenda'
+        'time time'
+        'log log';
+    grid-template-columns:1fr,1fr;
+    grid-template-rows: 0.5fr 4fr 2fr 2fr;
+    border-radius: 10px;
+    width: 286.11023622px;
+    height: 570.33070866px;
+
+    background-color: #fff;
+}
+.agenda
+{
+    grid-area: agenda;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+}
+.agendaInformation
+{
+    display: flex;
+    justify-content:space-between;
+}
+.agendaInformation > p 
+{
+    font-size: 13px;
+    border-bottom:2px solid rgba(50, 207, 155, 0.3);
+
+}
+.buttons
+{
+    display: flex;
+    justify-content:space-evenly;    
+}
+.button
+{
+    font-size: 10px;
+    text-align: center;
+    margin: 0px 10px;
+    border: 2px solid rgba(50, 207, 155, 0.3);
+    padding: 4px 5px;
+
+}
+.cards
+{
+   
+    
+    margin-top: 5px;
+    border-top: 1px solid rgba(50, 207, 155, 0.3);
+    width: 100%;
+    height: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 10px;
+}
+.card
+{
+    background-color: aliceblue;
+    width: 100%;
+    height: 50px;
+    border: 2px solid  rgb(184, 136, 230);
+    display: flex;
+    margin:8px 0px;
+}
+.cardDate
+{
+    height: 100%;
+    width: 50px;
+    background-color: rgb(184, 136, 230);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid black;
+    
+}
+.cardContent
+{
+    padding-left: 20px;
+    padding-top: 3px;
+    background-color:rgb(184, 136, 230);
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+}
+.title
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+.type
+{
+    margin-top: 3px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.eventSettings
+{
+    margin-top: 3px;
+    display: flex;
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    justify-content:space-between;
+
+}
+.settings
+{
+    justify-content: space-evenly;
+}
+
+.time
+{
+    grid-area: time;
+    border-top: 3px solid rgba(50, 207, 155, 0.3);
+    border-bottom: 3px solid rgba(50, 207, 155, 0.3);
+}
+.myEvents
+{
+    padding: 0px 5px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(50, 207, 155, 0.3);
+}
+.myEvents> p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+.myEventList
+{
+    font-size: 13px;
+    padding: 2px 5px;
+}
+
+
+.log
+{
+    grid-area: log;
+    padding: 10px 5px;
+}
+.calendar
+{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    text-align: center;
+}
+.navbar
+{
+    grid-area: navbar;   
+    display: flex;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(248, 248, 248);
+    border-bottom: #19191b solid 1px;
+}
+.navbarSymbol
+{
+    width: 35px;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.searchBar
+{
+    width: 35px;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo
+{
+    border-top-left-radius: 10px;
+    width: 35px;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.profilName
+{
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-left: 100px;
+}

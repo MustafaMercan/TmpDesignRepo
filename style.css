@@ -1,0 +1,100 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#phoneScreen
+{    
+    width: 100vw;
+    height:100vh;
+    background-color: aqua;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#app
+{
+    display: grid;
+    grid-template-areas: 
+        'title title'
+        'login login';
+
+    grid-template-columns:1fr,1fr;
+    grid-template-rows: 2fr 4fr;
+
+
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    width: 286.11023622px;
+    height: 570.33070866px;
+
+    background-color: #19191b;
+}
+#title
+{
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:antiquewhite
+}
+
+#login
+{
+   
+    grid-area: login;
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: center;
+}
+.inputInformations
+{
+    height: 30px;
+    width: 165px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    color:#19191b;
+    background: rgba(15, 104, 74, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(15, 104, 74, 0.3);
+    
+}
+.buttons
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signIn
+{
+    width: 165px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(15, 104, 74);
+
+    
+}
+.buttons > a > h5
+{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}

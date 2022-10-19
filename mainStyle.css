@@ -1,0 +1,246 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+    
+}
+#phoneScreen
+{    
+    width: 100vw;
+    height:100vh;
+    background-color: aqua;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#app
+{
+    display: grid;
+    grid-template-areas: 
+        'navbar navbar'
+        'profileInformation profileInformation'
+        'photoArea photoArea'
+        'name name'
+        'levelBar levelBar';
+    grid-template-columns:1fr,1fr;
+    grid-template-rows: 0.5fr 2fr 4fr 2.8fr 0.5fr ;
+
+
+    background-image: url(./img/test1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 286.11023622px;
+    height: 570.33070866px;
+
+    background-color: #19191b;
+}
+.navbar
+{
+    grid-area: navbar;   
+    display: flex;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(248, 248, 248);
+    border-bottom: #19191b solid 1px;
+}
+
+.name
+{
+    grid-area: name;
+    
+    
+}
+
+
+.logo
+{
+    border-top-left-radius: 10px;
+    width: 35px;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.navbarSymbol
+{
+    width: 35px;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.searchBar
+{
+    width: 35px;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+      
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.profilName
+{
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-left: 100px;
+    
+}
+
+
+.profile
+{
+    grid-area: profileInformation;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-image: url(./img/pp.jpg);
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+}
+.profile > h2
+{
+    color: #fff;
+    font-family: cursive;
+}
+.rank
+{
+    grid-area:photoArea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rankContent
+{
+    width: 240px;
+    height: 120px;
+    background-color: #1c5c863a;
+    border-radius: 10px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+.levelbar
+{
+    grid-area: levelBar;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar
+{
+    width: 90%;
+    height: 80%;
+    background-color: rgba(102, 51, 143, 0.678);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    background:rgba(102, 51, 143, 0.678);
+    line-height: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+  }
+  ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+  }
+  ul li:nth-child(1):before{
+    background: #4267B2;
+  }
+  ul li:nth-child(2):before{
+    background: #1DA1F2;
+  }
+  ul li:nth-child(3):before{
+    background: #E1306C;
+  }
+  ul li:nth-child(4):before{
+    background: #2867B2;
+  }
+  ul li:nth-child(5):before{
+    background: #ff0000;
+  }
+  ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+  }
+  ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #0ebe34;
+  }
+  ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #1DA1F2;
+  }
+  ul li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+  }
+
+  ul li:nth-child(1):hover{
+    color: #0ebe34;
+    box-shadow: 0 0 15px #0ebe34;
+    text-shadow: 0 0 15px #0ebe34;
+  }
+  ul li:nth-child(2):hover{
+    color: #26a4f2;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+  }
+  ul li:nth-child(3):hover{
+    color: #e23670;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+  }
